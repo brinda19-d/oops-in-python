@@ -1,0 +1,4 @@
+class Animal: //create the class
+    name = "Rabbit"
+a1 = Animal() //create the object
+print(a1.name) //print the name
