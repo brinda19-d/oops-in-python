@@ -1,0 +1,45 @@
+a) Normal method
+
+class Guva:
+    def color(self):
+        print("green")
+class Cherry:
+    def color(self):
+        print("blue")
+g = Guva()
+c = Cherry()
+g.color()
+c.color()
+
+b)Run time (overriding)
+
+class Animal:
+    def sound(self):
+        print("Animal Sound")
+class Dog(Animal):
+    def sound(self):
+        print("Bark")
+d = Dog()
+d.sound()
+
+c)complie time (overloading) 
+// if else used
+
+class Animals:
+    def details(self, name, place = None):
+        if place is None:
+            print("Name:", name)
+        else:
+            print("Name:", name, "place:", place)
+a = Animals()
+a.details("Rabbit")
+a.details("Rabbit","park")
+
+//normal used
+
+class Animals:
+    def details(self, name, place = None):
+            print("Name:", name, "place:", place)
+a = Animals()
+a.details("Rabbit")
+a.details("Rabbit","park")
