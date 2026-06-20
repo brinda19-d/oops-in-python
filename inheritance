@@ -1,0 +1,63 @@
+a)SINGLE :
+
+class program:
+    def show(self):
+        print("Result")
+class Python(program):
+    pass
+p = Python()
+p.show()
+
+b)Multiple
+
+class program:
+    def show(self):
+        print("Result")
+class language:
+    def input(self):
+        print("output")
+class Python(program, language):
+    pass
+p = Python()
+p.show()
+p.input()
+
+c)Multilevel
+
+class program:
+    def show(self):
+        print("Result")
+class language(program):
+    def input(self):
+        print("output")
+class Python(language):
+    pass
+p = Python()
+p.input()
+p.show()
+
+d)Hierarchical
+
+class program:
+    def show(self):
+        print("Result")
+class Java(program):
+    pass
+class Python(program):
+    pass
+p = Python()
+p.show()
+
+e)Hybrid
+
+class program:
+    def show(self):
+        print("Result")
+class Java(program):
+    pass
+class Python(program):
+    pass
+class Language(Java, Python):
+    pass
+l = Language()
+l.show()
