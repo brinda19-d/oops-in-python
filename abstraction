@@ -1,0 +1,14 @@
+from abc import ABC, abstractmethod // import abstract module
+
+class Brand(ABC): // Abstract Base Class(abc)
+
+    @abstractmethod
+    def show(self):
+        pass
+
+class Vivo(Brand):
+    def show(self):
+        print("View of phone")
+
+v = Vivo()
+v.show()
