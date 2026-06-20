@@ -1,0 +1,7 @@
+class Fruits:
+    def __init__(self):
+        self.__name = "guva"
+    def show(self):
+        print(self.__name)
+f = Fruits()
+f.show()
